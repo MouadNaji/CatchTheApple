@@ -1,15 +1,588 @@
+body {
+    margin: 0;
+}
+
+#tid {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 3vw;
+    left: 94.2vw;
+}
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    background-color: green;
+
+    overflow: hidden;
+    position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 #start {
-    display: none;
+    position: relative;
+    background-size: 100%;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+
+#play_knap {
+    position: absolute;
+    width: 14vw;
+    height: 11vw;
+    top: 18vw;
+    left: 45vw;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
 }
 
 #settings {
+    position: relative;
+}
+
+#slukknap {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: 9.5vw;
+    left: 69vw;
+    cursor: crosshair;
+    z-index: 5;
+}
+
+#gameover {}
+
+#levelcomplete {}
+
+#playagain {
+    position: absolute;
+    width: 22vw;
+    top: 27vw;
+    left: 67vw;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#playagain2 {
+    position: absolute;
+    width: 22vw;
+    top: 35.7vw;
+    left: 64vw;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+#game_background {
+    position: relative;
+    background-size: 100%;
+    overflow: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+#aeble {
+    position: absolute;
+    width: 4vw;
+    top: 2vw;
+    left: 64vw;
+}
+
+#hjerte {
+    position: absolute;
+    width: 4vw;
+    top: 2vw;
+    left: 33vw;
+}
+
+#aeble1 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    cursor: crosshair;
+    top: -10;
+}
+
+.aeble1_sprite {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 0vw;
+    background-size: 100%;
+}
+
+#aeble11 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    cursor: crosshair;
+    top: -10;
+}
+
+.aeble11_sprite {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 0vw;
+    background-size: 100%;
+}
+
+
+#aeble2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    cursor: crosshair;
+    animation-delay: 2s;
+}
+
+.aeble2_sprite {
+    position: inherit;
+    width: 10vw;
+    height: 10vw;
+    top: 0vw;
+    background-size: 100%;
+}
+
+#aeble22 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    cursor: crosshair;
+    animation-delay: 2s;
+}
+
+.aeble22_sprite {
+    position: inherit;
+    width: 10vw;
+    height: 10vw;
+    top: 0vw;
+    background-size: 100%;
+}
+
+#aeble3 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    cursor: crosshair;
+    animation-delay: 3s;
+    z-index: 2;
+}
+
+.aeble3_sprite {
+    position: inherit;
+    width: 10vw;
+    height: 10vw;
+    top: 0vw;
+    background-size: 100%;
+}
+
+#aeble4 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    cursor: crosshair;
+    z-index: 2;
+}
+
+.aeble4_sprite {
+    position: inherit;
+    width: 10vw;
+    height: 10vw;
+    top: 0vw;
+    background-size: 100%;
+}
+
+
+#points {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    margin: 0;
+    top: 1vw;
+    left: 58vw;
+    font-size: 6vw;
+}
+
+.pbilled {
+    position: absolute;
+    z-index: 3;
+}
+
+.antal {
+    position: absolute;
+
+}
+
+#life {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    margin: 0;
+    top: 1vw;
+    left: 27vw;
+    font-size: 6vw;
+}
+
+.pbilledminus {
+    position: absolute;
+
+}
+
+.antalminus {
+    position: absolute;
+
+}
+
+#tid {
+    font-size: 6vw;
+    top: 1vw;
+    left: 92vw
+}
+
+#energi {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    margin: 0;
+    top: 2vw;
+    left: 40vw;
+}
+
+#time {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    margin: 0;
+    top: 0vw;
+    left: 90vw;
+    transform: scale(0.7);
+    font-size: 6vw;
+}
+
+#settingsknap {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    margin: 0;
+    top: 0.5vw;
+    left: 0.9vw;
+    cursor: crosshair;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 5;
+}
+
+/***********animationer********/
+.paused {
+    animation-play-state: paused;
+}
+
+
+.falling1 {
+    animation-name: falling1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling1 {
+    from {
+        top: -17vw;
+        left: 30vw;
+    }
+
+    to {
+        top: 60vw;
+        left: 30vw;
+    }
+}
+
+.falling2 {
+    animation-name: falling2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling2 {
+    from {
+        top: -10vw;
+        left: 60vw
+    }
+
+    to {
+        top: 60vw;
+        left: 60vw;
+    }
+}
+
+.falling3 {
+    animation-name: falling3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling3 {
+    from {
+        top: -10vw;
+        left: 45vw
+    }
+
+    to {
+        top: 60vw;
+        left: 45vw;
+    }
+}
+
+.falling4 {
+    animation-name: falling4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling4 {
+    from {
+        top: -10vw;
+        left: 80vw
+    }
+
+    to {
+        top: 60vw;
+        left: 80vw;
+    }
+}
+
+.falling5 {
+    animation-name: falling5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling5 {
+    from {
+        top: -9vw;
+        left: 85vw
+    }
+
+    to {
+        top: 60vw;
+        left: 85vw;
+    }
+}
+
+.falling6 {
+    animation-name: falling6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling6 {
+    from {
+        top: -12vw;
+        left: 20vw;
+    }
+
+    to {
+        top: 60vw;
+        left: 20vw;
+    }
+}
+
+.falling7 {
+    animation-name: falling7;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling7 {
+    from {
+        top: -13vw;
+        left: 10vw
+    }
+
+    to {
+        top: 60vw;
+        left: 10vw;
+    }
+}
+
+.falling8 {
+    animation-name: falling8;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling8 {
+    from {
+        top: -10vw;
+        left: 25vw
+    }
+
+    to {
+        top: 60vw;
+        left: 25vw;
+    }
+}
+
+.falling9 {
+    animation-name: falling9;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling9 {
+    from {
+        top: -10vw;
+        left: 6vw
+    }
+
+    to {
+        top: 60vw;
+        left: 6vw;
+    }
+}
+
+.falling10 {
+    animation-name: falling10;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling10 {
+    from {
+        top: -10vw;
+        left: 4vw;
+    }
+
+    to {
+        top: 60vw;
+        left: 4vw;
+    }
+}
+
+.falling11 {
+    animation-name: falling11;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling11 {
+    from {
+        top: -10vw;
+        left: 17vw;
+    }
+
+    to {
+        top: 60vw;
+        left: 17vw;
+    }
+}
+
+.falling12 {
+    animation-name: falling12;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes falling12 {
+    from {
+        top: -10vw;
+        left: 8vw;
+    }
+
+    to {
+        top: 60vw;
+        left: 8vw;
+    }
+}
+
+
+
+.dissappear {
+    animation-name: dissappear;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+}
+
+@keyframes dissappear {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+
+.hide {
     display: none;
 }
 
-#gameover {
-    display: none;
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
 }
 
-#levelcomplete {
-    display: none;
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+.top {
+    top: -10;
+}
+
+.blur {
+    filter: blur(5px) brightness(80%);
 }

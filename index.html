@@ -4,36 +4,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Catch the happy apple</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
 <body>
     <div id="screen">
-        <div id="menu_background"></div>
-        <div id="game">
-            <div id="game_background"><img src="SVG/Spil%20sk%C3%A6rm.svg" alt="spilskærm"></div>
+
+        <div class="hide" id="settingsknap"><img alt="settingsknap" src=SVG/Settings%20icon.svg> </div> <div id="slukknap" class="hide"><img alt="slukknap" src=SVG/sluk%20knap.svg> </div> <div class="hide" id="settings"><img alt="settings" src=SVG/Settings.svg> </div> <div id="menu_background"></div>
+        <div id="game" class="hide">
+            <div id="background"><img alt="background" src="SVG/Spil%20sk%C3%A6rm.svg"></div>
 
             <div id="game_elements">
-                <div id="rødæble1"><img src="SVG/Red%20Apple%201.svg"></div>
-                <div id="rødæble2"><img src="SVG/Red%20apple%202.svg"></div>
-                <div id="grønæble1"><img src="SVG/Green%20apple%201.svg"></div>
-                <div id="grønæble2"><img src="SVG/Green%20apple%202.svg"></div>
-                <div id="fig5"></div>
-                <div id="fig6"></div>
-                <div id="fig7"></div>
+
+                <div id="aeble1" class="redaeble">
+                    <div class="aeble1_sprite"><img src="SVG/Red%20Apple%201.svg" alt="sprite"></div>
+                </div>
+                <div id="aeble2" class="redaeble">
+                    <div class="aeble2_sprite"><img src="SVG/Red%20apple%202.svg" alt="sprite"></div>
+                </div>
+                <div id="aeble3" class="greenaeble">
+                    <div class="aeble3_sprite"><img src="SVG/Green%20apple%201.svg" alt="sprite"></div>
+                </div>
+                <div id="aeble4" class="greenaeble">
+                    <div class="aeble4_sprite"><img src="SVG/Green%20apple%202.svg" alt="sprite"></div>
+                </div>
+                <div id="aeble11" class="redaeble">
+                    <div class="aeble11_sprite"><img src="SVG/Red%20Apple%201.svg" alt="sprite"></div>
+                </div>
+                <div id="aeble22" class="redaeble">
+                    <div class="aeble22_sprite"><img src="SVG/Red%20apple%202.svg" alt="sprite"></div>
+                </div>
             </div>
             <div id="game_ui">
-                <div id="points"><img src="SVG/point.svg"></div>
-                <div id="energi"><img src="SVG/Liv.svg"></div>
-                <div id="time"><img src="SVG/Timer.svg"></div>
+                <div id="points">
+                    <span class="pbilled"></span> <span class="antal">0</span>
+                </div>
+                <div id="aeble"><img alt="aebletaeller" src=SVG/%C3%A6ble.svg> </div> <div id="life">
+                    <span class="pbilledminus"></span> <span class="antalminus">3</span>
+                </div>
+                <div id="hjerte"><img src=SVG/hjerte.svg alt="hjerte"> </div>
+                <div id="time"><img src="SVG/Timer.svg" alt="time"></div>
+                <div id="tid">0</div>
             </div>
         </div>
-        <div id="start"> <img src="SVG/Level%20Complete.svg"></div>
-        <div id="settings"></div>
-        <div id="gameover"></div>
-        <div id="levelcomplete"></div>
-    </div>
+        <div id="start"><img src="SVG/Start%20sk%C3%A6rm.svg" alt="start">
+            <div id="play_knap"><img src="SVG/start%20knap.svg" alt="play_knap"></div>
+        </div>
+        <div id="playagain2" class="hide"><img src=SVG/playagain.svg alt="playagain2"> </div>
+        <div id="gameover"><img src=SVG/Game%20over%20.svg alt="gameover"> </div>
+        <div id="levelcomplete">
+            <div id="playagain" class="hide"><img src=SVG/playagain.svg alt="playagain"> </div> <img src=SVG/Level%20Complete.svg alt="levelcomplete">
+        </div>
+    </div> <audio src="lyde/bensound-funnysong.mp3" id="myMusic"></audio>
+    <audio src="lyde/god.mp3" id="haps1"></audio>
+    <audio src="lyde/d%C3%A5rlig.mp3" id="prut1"></audio>
+    <script src="script.js"></script>
 
 
 </body>
